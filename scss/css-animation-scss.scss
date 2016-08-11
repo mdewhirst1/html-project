@@ -99,15 +99,15 @@ div#example-inf{
 }
 
 div#example-rev{
-	-webkit-animation: move 3s ease 1s infinite reverse;
-	-o-animation: move 3s ease 1s infinite reverse;
-	animation: move 3s ease 1s infinite reverse;
+	-webkit-animation: move 4s ease 1s infinite reverse;
+	-o-animation: move 4s ease 1s infinite reverse;
+	animation: move 4s ease 1s infinite reverse;
 }
 
 div#example-alt{
-	-webkit-animation: move 3s ease 1s infinite alternate;
-	-o-animation: move 3s ease 1s infinite alternate;
-	animation: move 3s ease 1s infinite alternate;
+	-webkit-animation: move 4s ease 1s infinite alternate;
+	-o-animation: move 4s ease 1s infinite alternate;
+	animation: move 4s ease 1s infinite alternate;
 }
 
 @keyframes move{
