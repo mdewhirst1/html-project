@@ -24,6 +24,11 @@ section.example {
   height: 230px;
   padding: 10px 20%; }
 
+section.example-move {
+  width: 100%;
+  height: 330px;
+  padding: 10px 20%; }
+
 section.example-code {
   background-color: #f1f1f1;
   padding: 5px 20px;
@@ -36,6 +41,7 @@ div.code-fragment {
   margin: auto 10%; }
 
 div.move-contain {
+  margin: auto;
   width: 300px;
   height: 300px; }
 
@@ -80,11 +86,16 @@ div#example-inf {
   100% {
     background-color: red; } }
 div#example-rev {
-  -webkit-animation: reverse 3s ease 1s infinite reverse;
-  -o-animation: reverse 3s ease 1s infinite reverse;
-  animation: reverse 3s ease 1s infinite reverse; }
+  -webkit-animation: move 3s ease 1s infinite reverse;
+  -o-animation: move 3s ease 1s infinite reverse;
+  animation: move 3s ease 1s infinite reverse; }
 
-@keyframes reverse {
+div#example-alt {
+  -webkit-animation: move 3s ease 1s infinite alternate;
+  -o-animation: move 3s ease 1s infinite alternate;
+  animation: move 3s ease 1s infinite alternate; }
+
+@keyframes move {
   0% {
     top: 0px;
     left: 0px; }
