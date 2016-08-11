@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css animations</title>
+	<link rel="stylesheet" type="text/css" href="css-animation-css.css">
+</head>
+<body>
+	<header>
+		<h1>Css Animations</h1>
+	</header>
+	<section id="intro">
+		<h2>What are CSS Animations?</h2>
+		<p>An animation lets an element change from one style to another.</p>
+		<p>You can change as many CSS properties you want, as many times you want.</p>
+		<p>To use CSS3 animation, you must first specify some keyframes for the animation.</p>
+	</section>
+
+	<section id="basics">
+		<h2>The Basics</h2>
+		<p>Keyframes hold what styles the element will have at certain times.</p>
+		<p>To specify the key frames use '@keyframes example'.</p>
+		<p>The keyframes then need to be linked to the element that you want to animate.</p>
+		<p>This is done by adding 'animation-name: example'.</p>
+		<p>You also need to add a duration for the animation using 'animation-duration:'.</p>
+		<p><strong>Note</strong> the duration is set to 0 as default the resulting animation would have no effect.</p>
+	</section>
+	<section class="examle-code">
+		<h3>Example</h3>
+		<p>The following code changes the div element from red to yellow</p>
+		<p>/* The animation code */<br>
+		@keyframes example {<br>
+		&nbsp;&nbsp;from {background-color: red;}<br>
+		&nbsp;&nbsp;to {background-color: yellow;}<br>
+		}<br>
+		<br>
+		/* The element to apply the animation to */<br>
+		div {<br>
+		&nbsp;&nbsp;width: 100px;<br>
+		&nbsp;&nbsp;height: 100px;<br>
+		&nbsp;&nbsp;background-color: red;<br>
+		&nbsp;&nbsp;animation-name: example;<br>
+		&nbsp;&nbsp;animation-duration: 4s;<br>
+		}</p>
+	</section>
+	<section class="example">
+		<div id="example-basic"></div>
+	</section>
+
+	<section class="examle-code">
+		<p>It is possible to set multiple key frames using % insted of from and to.</p>
+		<p>@keyframes example {<br>
+		&nbsp;&nbsp;0% {background-color: red;}<br>
+		&nbsp;&nbsp;25% {background-color: yellow;}<br>
+		&nbsp;&nbsp;50% {background-color: green;}<br>
+		&nbsp;&nbsp;75% {background-color: blue;}<br>
+		&nbsp;&nbsp;100% {background-color: red;}<br>
+		}</p>
+	</section>
+	<section id="repeating">
+		<h2>Repeating an animation</h2>
+		<p>An animation can be repeated using 'animation-iteration-count:'.</p>
+		<p>This can either be a number or infinite</p>
+	</section>
+	<section class="examle-code">
+		<h3>Example</h3>
+		<p>The following code uses "infinite" to make the animation repeat for ever.</p>
+		<p>/div {<br>
+		&nbsp;&nbsp;animation-name: example;<br>
+		&nbsp;&nbsp;animation-duration: 4s;<br>
+		&nbsp;&nbsp;animation-iteration-count: infinite;<br>
+		}</p>
+	</section>
+	<section class="example">
+		<div id="example-inf"></div>
+	</section>
+
+	<section id="alternate">
+		<h2>Reversing and Alternating an animation</h2>
+		<p>An animation can be to animate in revese using 'animation-direction: reverse;'.</p>
+		<p>This will cause the animation to run in reverse to what was specified.</p>
+	</section>
+	<section class="examle-code">
+		<h3>Example</h3>
+		<p>div {<br>
+		&nbsp;&nbsp;animation-name: example;<br>
+		&nbsp;&nbsp;animation-duration: 4s;<br>
+		&nbsp;&nbsp;animation-iteration-count: infinite;<br>
+		&nbsp;&nbsp;animation-direction: alternate;<br>
+		}</p>
+	</section>
+	<section class="example">
+		<div id="example-rev"></div>
+	</section>
+	<section id="alternate">
+		<p>Or it can be set to alternate with 'animation-direction: alternate;'</p>
+		<p>This will cause the animation to run forward, then in reverse, then forward.</p>
+	</section>
+	<section class="examle-code">
+		<h3>Example</h3>
+		<p>div {<br>
+		&nbsp;&nbsp;animation-name: example;<br>
+		&nbsp;&nbsp;animation-duration: 4s;<br>
+		&nbsp;&nbsp;animation-iteration-count: infinite;<br>
+		&nbsp;&nbsp;animation-direction: alternate;<br>
+		}</p>
+	</section>
+	<section class="example">
+		<div id="example-alt"></div>
+	</section>
+	<section id="speed">
+		<h2>The Speed Curve of the Animation</h2>
+		<p>The 'animation-timing-function:' specifies the speed curve of the animation.</p>
+		<p>The animation-timing-function property can have the following values:</p>
+		<ul>
+			<li>ease - specifies an animation with a slow start, then fast, then end slowly (this is default)</li>
+			<li>linear - specifies an animation with the same speed from start to end</li>
+			<li>ease-in - specifies an animation with a slow start</li>
+			<li>ease-out - specifies an animation with a slow end</li>
+			<li>ease-in-out - specifies an animation with a slow start and end</li>
+			<li>cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function</li>
+		</ul>
+	</section>
+	<section id="delay">
+		<h2>Delaying an Animation</h2>
+		<p>An animation can be delayed with 'animation-delay:'</p>
+	</section>
+	<section id="short">
+		<h2>Shorthand</h2>
+		<p>The two examples below both produce the same result.</p>
+		<p>div {<br>
+		&nbsp;&nbsp;animation-name: example;<br>
+		&nbsp;&nbsp;animation-duration: 4s;<br>
+		&nbsp;&nbsp;animation-timing-function: linear;<br>
+		&nbsp;&nbsp;animation-delay: 2s;<br>
+		&nbsp;&nbsp;animation-iteration-count: infinite;<br>
+		&nbsp;&nbsp;animation-direction: alternate;<br>
+		}</p>
+		<p>div {<br>
+		&nbsp;&nbsp;animation: example 4s linear 2s infinite alternate;<br>
+		}</p>
+	</section>
+</body>
+</html>
