@@ -111,5 +111,26 @@ div#example-alt {
   100% {
     top: 0px;
     left: 0px; } }
+.party {
+  -webkit-animation: party 1s linear 60s infinite;
+  -o-animation: party 1s linear 60s infinite;
+  animation: party 1s linear 60s infinite; }
+
+@keyframes party {
+  0% {
+    background-color: red;
+    font-size: 100%; }
+  25% {
+    background-color: yellow;
+    font-size: 150%; }
+  50% {
+    background-color: green;
+    font-size: 200%; }
+  75% {
+    background-color: blue;
+    font-size: 150%; }
+  100% {
+    background-color: red;
+    font-size: 100%; } }
 
 /*# sourceMappingURL=css-animation-css.css.map */
