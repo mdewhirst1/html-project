@@ -35,11 +35,23 @@ section.example-code {
 div.code-fragment {
   margin: auto 10%; }
 
+div.move-contain {
+  width: 300px;
+  height: 300px; }
+
 div.animate {
   margin: auto;
-  background-color: red;
+  background-color: #ff0000;
   width: 200px;
   height: 200px; }
+
+div.animate-move {
+  background-color: #ff0000;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 0px;
+  left: 0px; }
 
 div#example-basic {
   -webkit-animation: basic 5s ease 1s;
@@ -67,5 +79,26 @@ div#example-inf {
     background-color: blue; }
   100% {
     background-color: red; } }
+div#example-rev {
+  -webkit-animation: reverse 3s ease 1s infinite reverse;
+  -o-animation: reverse 3s ease 1s infinite reverse;
+  animation: reverse 3s ease 1s infinite reverse; }
+
+@keyframes reverse {
+  0% {
+    top: 0px;
+    left: 0px; }
+  25% {
+    top: 0px;
+    left: 200px; }
+  50% {
+    top: 200px;
+    left: 200px; }
+  75% {
+    top: 200px;
+    left: 0px; }
+  100% {
+    top: 0px;
+    left: 0px; } }
 
 /*# sourceMappingURL=css-animation-css.css.map */
