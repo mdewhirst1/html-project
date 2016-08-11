@@ -60,3 +60,17 @@ div#example-basic{
 	from {background-color: red;}
 	to {background-color: yellow;}
 }
+
+div#example-inf{
+	-webkit-animation: inf 5s ease infinite;
+	-o-animation: inf 5s ease infinite;
+	animation: inf 5s ease infinite;
+}
+
+@keyframes inf{
+	0% {background-color: red;}
+	25% {background-color: yellow;}
+	50% {background-color: green;}
+	75% {background-color: blue;}
+	100% {background-color: red;}
+}
