@@ -112,9 +112,9 @@ div#example-alt {
     top: 0px;
     left: 0px; } }
 .party {
-  -webkit-animation: party 1s linear 60s infinite;
-  -o-animation: party 1s linear 60s infinite;
-  animation: party 1s linear 60s infinite; }
+  -webkit-animation: party 1s linear 300s infinite;
+  -o-animation: party 1s linear 300s infinite;
+  animation: party 1s linear 300s infinite; }
 
 @keyframes party {
   0% {
@@ -132,5 +132,37 @@ div#example-alt {
   100% {
     background-color: red;
     font-size: 100%; } }
+p {
+  -webkit-animation: p-party 1s linear 300s infinite;
+  -o-animation: p-party 1s linear 300s infinite;
+  animation: p-party 1s linear 300s infinite; }
+
+@keyframes p-party {
+  0% {
+    border: 2px dotted red; }
+  25% {
+    border: 2px dashed blue; }
+  50% {
+    border: 2px dotted red; }
+  75% {
+    border: 2px dashed blue; }
+  100% {
+    border: 2px dotted red; } }
+section.example {
+  -webkit-animation: spin-example 2s linear 300s infinite;
+  -o-animation: spin-example 2s linear 300s infinite;
+  animation: spin-example 2s linear 300s infinite; }
+
+@keyframes spin-example {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(90deg); }
+  50% {
+    transform: rotate(180deg); }
+  75% {
+    transform: rotate(270deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 /*# sourceMappingURL=css-animation-css.css.map */
