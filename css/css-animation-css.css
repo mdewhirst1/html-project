@@ -1,11 +1,6 @@
 * {
   font-family: Arial, Helvetica, sans-serif; }
 
-main {
-  width: 100%;
-  display: inline-block;
-  box-sizing: border-box; }
-
 header {
   width: 100%; }
 
@@ -92,6 +87,11 @@ nav li:hover {
   background-color: #555;
   color: white;
   border-radius: 5px; }
+
+main {
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box; }
 
 section {
   margin: 5px 0px;
@@ -192,9 +192,9 @@ div#example-alt {
     top: 0px;
     left: 0px; } }
 .party {
-  -webkit-animation: party 1s linear 300s 3;
-  -o-animation: party 1s linear 300s 3;
-  animation: party 1s linear 300s 3; }
+  -webkit-animation: party 1s linear 180s 10;
+  -o-animation: party 1s linear 180s 10;
+  animation: party 1s linear 180s 10; }
 
 @keyframes party {
   0% {
@@ -213,9 +213,9 @@ div#example-alt {
     background-color: red;
     font-size: 100%; } }
 p {
-  -webkit-animation: p-party 1s linear 300s 3;
-  -o-animation: p-party 1s linear 300s 3;
-  animation: p-party 1s linear 300s 3; }
+  -webkit-animation: p-party 1s linear 180s 10;
+  -o-animation: p-party 1s linear 180s 10;
+  animation: p-party 1s linear 180s 10; }
 
 @keyframes p-party {
   0% {
@@ -229,9 +229,9 @@ p {
   100% {
     border: 2px dotted red; } }
 section.example {
-  -webkit-animation: spin-example 2s linear 300s 3;
-  -o-animation: spin-example 2s linear 300s 3;
-  animation: spin-example 2s linear 300s 3; }
+  -webkit-animation: spin-example 2s linear 180s 10;
+  -o-animation: spin-example 2s linear 180s 10;
+  animation: spin-example 2s linear 180s 10; }
 
 @keyframes spin-example {
   0% {
