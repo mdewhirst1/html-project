@@ -14,9 +14,9 @@ header h1 {
   font-size: 500%; }
 
 header div.animate {
-  width: 100px;
-  height: 100px;
-  margin: 10px 10px 10px 20px;
+  width: 80px;
+  height: 80px;
+  margin: 0;
   position: relative;
   background-color: #ff0000;
   -webkit-animation: spin-head 3s linear 1s infinite;
@@ -39,7 +39,7 @@ header div.animate {
   100% {
     transform: rotate(360deg);
     border-radius: 0px; } }
-@keyframes spin-head-party {
+@keyframes spin-head-move {
   0% {
     position: relative;
     top: 0px; }
@@ -58,16 +58,18 @@ header div.animate {
 header div#head1 {
   float: left;
   position: relative;
-  -webkit-animation: spin-head-party 3s linear 1s infinite;
-  -o-animation: spin-head-party 3s linear 1s infinite;
-  animation: spin-head-party 3s linear 1s infinite; }
+  padding: 40px;
+  -webkit-animation: spin-head-move 3s linear 1s infinite;
+  -o-animation: spin-head-move 3s linear 1s infinite;
+  animation: spin-head-move 3s linear 1s infinite; }
 
 header div#head2 {
   float: right;
   position: relative;
-  -webkit-animation: spin-head-party 3s linear 1s infinite;
-  -o-animation: spin-head-party 3s linear 1s infinite;
-  animation: spin-head-party 3s linear 1s infinite; }
+  padding: 40px;
+  -webkit-animation: spin-head-move 3s linear 1s infinite;
+  -o-animation: spin-head-move 3s linear 1s infinite;
+  animation: spin-head-move 3s linear 1s infinite; }
 
 nav {
   width: 60%;
@@ -190,9 +192,9 @@ div#example-alt {
     top: 0px;
     left: 0px; } }
 .party {
-  -webkit-animation: party 1s linear 300s infinite;
-  -o-animation: party 1s linear 300s infinite;
-  animation: party 1s linear 300s infinite; }
+  -webkit-animation: party 1s linear 300s 3;
+  -o-animation: party 1s linear 300s 3;
+  animation: party 1s linear 300s 3; }
 
 @keyframes party {
   0% {
@@ -211,9 +213,9 @@ div#example-alt {
     background-color: red;
     font-size: 100%; } }
 p {
-  -webkit-animation: p-party 1s linear 300s infinite;
-  -o-animation: p-party 1s linear 300s infinite;
-  animation: p-party 1s linear 300s infinite; }
+  -webkit-animation: p-party 1s linear 300s 3;
+  -o-animation: p-party 1s linear 300s 3;
+  animation: p-party 1s linear 300s 3; }
 
 @keyframes p-party {
   0% {
@@ -227,9 +229,9 @@ p {
   100% {
     border: 2px dotted red; } }
 section.example {
-  -webkit-animation: spin-example 2s linear 300s infinite;
-  -o-animation: spin-example 2s linear 300s infinite;
-  animation: spin-example 2s linear 300s infinite; }
+  -webkit-animation: spin-example 2s linear 300s 3;
+  -o-animation: spin-example 2s linear 300s 3;
+  animation: spin-example 2s linear 300s 3; }
 
 @keyframes spin-example {
   0% {
