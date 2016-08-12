@@ -5,35 +5,35 @@
 	<link rel="stylesheet" type="text/css" href="css/css-animation-css.css">
 </head>
 <body>
-	<header>
-		<h1 class="party">Css Animations</h1>
+	<header role="banner">
+		<h1 class="party" role="heading">Css Animations</h1>
 		<div id=head1>
 			<div class="animate"></div>
 		</div>
 		<div id=head2>
 			<div class="animate"></div>
 		</div>
-		<nav>
-			<ul>
-				<li><a href="#basics">Basics</a></li>
-				<li><a href="#repeating">Repeating</a></li>
-				<li><a href="#alternate">Direction</a></li>
-				<li><a href="#speed">Speed curve</a></li>
-				<li><a href="#delay">Delay</a></li>
-				<li><a href="#short">Short hand</a></li>
+		<nav role="navigation">
+			<ul role="menu">
+				<li role="menuitem"><a href="#basics">Basics</a></li>
+				<li role="menuitem"><a href="#repeating">Repeating</a></li>
+				<li role="menuitem"><a href="#alternate">Direction</a></li>
+				<li role="menuitem"><a href="#speed">Speed curve</a></li>
+				<li role="menuitem"><a href="#delay">Delay</a></li>
+				<li role="menuitem"><a href="#short">Short hand</a></li>
 			</ul>
 		</nav>
 	</header>
 	<main>
-		<section id="intro">
-			<h2 class="party">What are CSS Animations?</h2>
+		<section id="intro" role="region">
+			<h2 class="party" role="heading">What are CSS Animations?</h2>
 			<p>An animation lets an element change from one style to another.</p>
 			<p>You can change as many CSS properties you want, as many times you want.</p>
 			<p>To use CSS3 animation, you must first specify some keyframes for the animation.</p>
 		</section>
 
-		<section id="basics">
-			<h2 class="party">The Basics</h2>
+		<section id="basics" role="region">
+			<h2 class="party" role="heading">The Basics</h2>
 			<p>Keyframes hold what styles the element will have at certain times.</p>
 			<p>To specify the key frames use '@keyframes example'.</p>
 			<p>The keyframes then need to be linked to the element that you want to animate.</p>
@@ -41,8 +41,8 @@
 			<p>You also need to add a duration for the animation using 'animation-duration:'.</p>
 			<p><strong>Note</strong> the duration is set to 0 as default the resulting animation would have no effect.</p>
 		</section>
-		<section class="example-code">
-			<h3 class="party">Example</h3>
+		<section class="example-code" role="region">
+			<h3 class="party" role="heading">Example</h3>
 			<p>The following code changes the div element from red to yellow</p>
 			<p><strong>Note</strong>This animation only runs once you may have missed it, refresh the page to reset it.</p>
 			<div class="code-fragment">
@@ -62,11 +62,11 @@
 				}</p>
 			</div>
 		</section>
-		<section class="example">
+		<section class="example" role="region">
 			<div id="example-basic" class="animate"></div>
 		</section>
 
-		<section class="example-code">
+		<section class="example-code" role="region">
 			<p>It is possible to set multiple key frames using % insted of from and to.</p>
 			<div class="code-fragment">
 				<p>@keyframes example {<br>
@@ -78,13 +78,13 @@
 				}</p>
 			</div>
 		</section>
-		<section id="repeating">
-			<h2 class="party">Repeating an animation</h2>
+		<section id="repeating" role="region">
+			<h2 class="party" role="heading">Repeating an animation</h2>
 			<p>An animation can be repeated using 'animation-iteration-count:'.</p>
 			<p>This can either be a number or infinite</p>
 		</section>
-		<section class="example-code">
-			<h3 class="party">Example</h3>
+		<section class="example-code" role="region">
+			<h3 class="party" role="heading">Example</h3>
 			<p>The following code uses "infinite" to make the animation repeat for ever.</p>
 			<div class="code-fragment">
 				<p>/div {<br>
@@ -94,17 +94,17 @@
 				}</p>
 			</div>
 		</section>
-		<section class="example">
+		<section class="example" role="region">
 			<div id="example-inf" class="animate"></div>
 		</section>
 
-		<section id="alternate">
-			<h2 class="party">Reversing and Alternating an animation</h2>
+		<section id="alternate" role="region">
+			<h2 class="party" role="heading">Reversing and Alternating an animation</h2>
 			<p>An animation can be to animate in revese using 'animation-direction: reverse;'.</p>
 			<p>This will cause the animation to run in reverse to what was specified.</p>
 		</section>
-		<section class="example-code">
-			<h3 class="party">Example</h3>
+		<section class="example-code" role="region">
+			<h3 class="party" role="heading">Example</h3>
 			<p><strong>Note</strong> the example below would normally move in a clockwise direction.</p>
 			<div class="code-fragment">
 				<p>@keyframes example {<br>
@@ -124,17 +124,17 @@
 				}</p>
 			</div>
 		</section>
-		<section class="example-move">
+		<section class="example-move" role="region">
 			<div class="move-contain">
 				<div id="example-rev" class="animate-move"></div>
 			</div>
 		</section>
-		<section id="alternate">
+		<section id="alternate" role="region">
 			<p>Or it can be set to alternate with 'animation-direction: alternate;'</p>
 			<p>This will cause the animation to run forward, then in reverse, then forward.</p>
 		</section>
-		<section class="example-code">
-			<h3 class="party">Example</h3>
+		<section class="example-code" role="region">
+			<h3 class="party" role="heading">Example</h3>
 			<div class="code-fragment">
 				<p>div {<br>
 				&nbsp;&nbsp;position: relative;<br>
@@ -145,13 +145,13 @@
 				}</p>
 			</div>
 		</section>
-		<section class="example-move">
+		<section class="example-move" role="region">
 			<div class="move-contain">
 				<div id="example-alt" class="animate-move"></div>
 			</div>
 		</section>
-		<section id="speed">
-			<h2 class="party">The Speed Curve of the Animation</h2>
+		<section id="speed" role="region">
+			<h2 class="party" role="heading">The Speed Curve of the Animation</h2>
 			<p>The 'animation-timing-function:' specifies the speed curve of the animation.</p>
 			<p>The animation-timing-function property can have the following values:</p>
 			<ul>
@@ -163,15 +163,15 @@
 				<li>cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function</li>
 			</ul>
 		</section>
-		<section id="delay">
-			<h2 class="party">Delaying an Animation</h2>
+		<section id="delay" role="region">
+			<h2 class="party" role="heading">Delaying an Animation</h2>
 			<p>The start of an animation can be delayed with 'animation-delay:'</p>
 		</section>
-		<section id="short">
-			<h2>Shorthand</h2>
+		<section id="short" role="region">
+			<h2 class="party" role="heading">Shorthand</h2>
 			<p>The two examples below both produce the same result.</p>
 		</section>
-		<section class="example-code">
+		<section class="example-code" role="region">
 			<div class="code-fragment">
 				<p>div {<br>
 				&nbsp;&nbsp;animation-name: example;<br>
