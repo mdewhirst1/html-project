@@ -20,6 +20,20 @@ header h1{
 	font-size: 500%;
 }
 
+nav {
+	width: 100%;
+}
+
+nav ul {
+	width: 50%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+}
+
 section{
 	margin: 5px 0px;
 	display: block;
