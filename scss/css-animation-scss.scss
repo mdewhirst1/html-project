@@ -20,18 +20,75 @@ header h1{
 	font-size: 500%;
 }
 
+header div.animate{
+	width: 100px;
+	height: 100px;
+	margin: 10px 10px 10px 20px;
+	position: relative;
+	background-color: $animation-color;
+	-webkit-animation: spin-head 3s linear 1s infinite;
+	-o-animation: spin-head 3s linear 1s infinite;
+	animation: spin-head 3s linear 1s infinite;
+}
+
+
+@keyframes spin-head{
+	0% {transform: rotate(0deg); border-radius: 0px;}
+	25% {transform: rotate(90deg); border-radius: 20px;}
+	50% {transform: rotate(180deg); border-radius: 60px;}
+	75% {transform: rotate(270deg); border-radius: 20px;}
+	100% {transform: rotate(360deg); border-radius: 0px;}
+}
+
+@keyframes spin-head-party{
+	0% {position: relative; top: 0px;}
+	25% {position: relative; top: 100px;}
+	50% {position: relative; top: 0px;}
+	75% {position: relative; top: -100px;}
+	100% {position: relative; top: 0px;}
+}
+
+header div#head1{
+	float: left;
+	position: relative;
+
+	-webkit-animation: spin-head-party 3s linear 1s infinite;
+	-o-animation: spin-head-party 3s linear 1s infinite;
+	animation: spin-head-party 3s linear 1s infinite;
+}
+
+header div#head2{
+	float: right;
+	position: relative;
+
+	-webkit-animation: spin-head-party 3s linear 1s infinite;
+	-o-animation: spin-head-party 3s linear 1s infinite;
+	animation: spin-head-party 3s linear 1s infinite;
+}
+
 nav {
-	width: 100%;
+	width: 60%;
+	padding: 0 20%;
+	float: none;
 }
 
 nav ul {
-	width: 50%;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    background-color: #f1f1f1;
 }
 nav li {
     display: inline;
+    margin: 0 3px;
+    padding: 4px 4px;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #555;
+    color: white;
+    border-radius: 5px;
 }
 
 section{
