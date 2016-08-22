@@ -203,9 +203,9 @@ div#example-alt {
     top: 0px;
     left: 0px; } }
 .party {
-  -webkit-animation: party 1s linear 180s 10;
-  -o-animation: party 1s linear 180s 10;
-  animation: party 1s linear 180s 10; }
+  -webkit-animation: party 1s linear 120s 10;
+  -o-animation: party 1s linear 120s 10;
+  animation: party 1s linear 120s 10; }
 
 @keyframes party {
   0% {
@@ -224,9 +224,9 @@ div#example-alt {
     background-color: red;
     font-size: 100%; } }
 p {
-  -webkit-animation: p-party 1s linear 180s 10;
-  -o-animation: p-party 1s linear 180s 10;
-  animation: p-party 1s linear 180s 10; }
+  -webkit-animation: p-party 1s linear 120s 10;
+  -o-animation: p-party 1s linear 120s 10;
+  animation: p-party 1s linear 120s 10; }
 
 @keyframes p-party {
   0% {
@@ -240,9 +240,9 @@ p {
   100% {
     border: 2px dotted red; } }
 section.example {
-  -webkit-animation: spin-example 2s linear 180s 10;
-  -o-animation: spin-example 2s linear 180s 10;
-  animation: spin-example 2s linear 180s 10; }
+  -webkit-animation: spin-example 2s linear 120s 10;
+  -o-animation: spin-example 2s linear 120s 10;
+  animation: spin-example 2s linear 120s 10; }
 
 @keyframes spin-example {
   0% {
